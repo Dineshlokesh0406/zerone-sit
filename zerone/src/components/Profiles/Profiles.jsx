@@ -23,10 +23,11 @@ const Profiles = () => {
             <div className="student-profile">
                 
                 <h2>Dr. Bhanuprakash C</h2>
+                <h2>Dr. Prashanth G K</h2>
             </div>
             <div className="student-profile">
                 
-                <h2>Dr. Prashanth G K</h2>
+                
             </div>
             
             </div>
