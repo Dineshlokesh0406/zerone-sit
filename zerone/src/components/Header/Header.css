@@ -180,7 +180,7 @@ span {
     font-size: 4.5rem;
   }
 }
-d
+
 @media (max-width: 1040px) {
   .header {
     margin-top: 18rem;
@@ -580,3 +580,4 @@ d
 .alumni{
   font-family: pied;
 }
+
