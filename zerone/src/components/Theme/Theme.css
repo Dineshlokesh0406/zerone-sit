@@ -1,0 +1,190 @@
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9); /* Start slightly smaller */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: scale(1); /* End at full size */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+h1{
+    font-family: pied;
+    
+}
+
+h2{
+    font-family: designer;
+    letter-spacing: 2px;
+}
+
+
+
+span{
+    color: #ff0000;
+    font-family: pied;
+}
+
+.green{
+    color: #06e406;
+}
+
+.theme-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.theme-container img {
+    max-width: 45%; /* Restricts the image width to 45% of the container */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: cover; /* Ensures the image fits well */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    z-index: 5;
+    opacity: 0; /* Hidden by default */
+    animation: scaleUp 0.8s ease forwards; /* Apply animation on render */
+}
+
+.slogan {
+    flex: 1; /* Ensures the text takes up the remaining space */
+    text-align: left; /* Aligns the text to the left */
+    color: #ffffff; /* Change to white (#fff) for dark backgrounds */
+    font-family: 'Inter', sans-serif;
+    z-index: 5;
+}
+
+.slogan h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff7f7; /* Adjust text color if needed */
+}
+
+.slogan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    color: #ffffff; /* Adjust text color if needed */
+}
+
+.slogan h2{
+    z-index: 7;
+}
+
+@media (max-width: 1208px){
+    .slogan h2{
+        font-size: 1rem;
+       
+    }
+    .slogan h2 span{
+        font-size: 4.3rem;
+    }
+    
+}
+
+@media (max-width: 960px){
+    .slogan h1{
+        font-size: 1.5rem;
+       
+    }
+    .slogan h1 span{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 870px){
+    .slogan h1{
+        font-size: 1.3rem;
+       
+    }
+    .slogan h1 span{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 832px){
+    .slogan h1{
+        font-size: 0.8rem;
+        
+    }
+    .slogan h1 span{
+        font-size: 3rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .theme-container {
+        flex-direction: column; /* Stacks the image and text on smaller screens */
+        text-align: center; /* Centers text for smaller screens */
+        margin-bottom: 15rem;
+    }
+
+    .theme-container img {
+        max-width: 60%; /* Adjusts the image size for smaller screens */
+        margin-bottom: 1.5rem;
+    }
+
+    .slogan {
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: center; /* Centers text for smaller screens */
+        justify-content: start;
+    }
+    .slogan h1{
+        font-size: 1rem;
+       
+    }
+    .slogan h1 span{
+        font-size: 4rem;
+    }
+}
+
+
+
+@media (max-width: 400px){
+
+}
+
+.slogan h2 {
+    font-size: 1.2rem; /* Adjust as needed */
+    color: #ffffff; /* Text color */
+    font-weight: bold; /* Makes the text bold */
+    z-index: 6; /* Ensures it is above other elements */
+    position: relative; /* Ensures z-index is applied */
+}
+
+.slogan h2 span {
+    color: #ff0000; /* Red color for the first span */
+    z-index: 6; /* Ensures it is above other elements */
+    position: relative; /* Ensures z-index is applied */
+}
+
+.slogan h2 .green {
+    color: #06e406; /* Green color for the second span */
+    z-index: 6; /* Ensures it is above other elements */
+    position: relative; /* Ensures z-index is applied */
+}
+
+
+@media (max-width: 510px){
+    .slogan {
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: center; /* Centers text for smaller screens */
+        justify-content: start;
+    }
+    .slogan h2{
+        font-size: 0.8rem;
+       
+    }
+    .slogan h2 span{
+        font-size: 3rem;
+    }
+}
